@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<title>GitGör Afyonkarahisar </title>
+
+    <head>
+        <style>
+
+            a.nounderline {text-decoration: none; }
+            .header {
+  background-color: #007bff;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sag{
+  margin-left: 10px;
+}
+.sag2{
+  margin-right: 20px;
+}
+a {text-decoration: none; }
+.item {
+  height: 500px;
+  width:500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.button-1 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-1:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .button-1:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-1:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .button-1:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-1:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-1:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48Dpx;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-6 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-6:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-6:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-6:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-6:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-6:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-6:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-2 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-2:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-2:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-2:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-2:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-2:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-2:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-3 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-3:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-3:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-3:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-3:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-3:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-3:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-4 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-4:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-4:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-4:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-4:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-4:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-4:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  body,h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+  float: left;
+  border-radius: 30px;
+  left: 10px;
+}
+
+.illeryazı {
+  font-size: 15px;
+  
+} 
+
+.linkdeneme {
+  cursor: pointer
+} 
+
+.footer { background:#007bff;width:100%; height:269px;float:left;color:white; font-family:arial;}
+		.footer #kutu b {font-size:14px;}
+		* {margin:0px;padding:0px;}
+		.footer_container{width:768px; height:175px; margin:30px auto;}
+		ul {list-style-type:none;margin:17px 0;padding:0px;}
+		#kutu {width:auto; height:1px; float:left; color: #ffffff;}
+		ul li {float:left;font-family:tahoma; font-size:12px; margin-bottom:8px; clear:left; color:#2d2d2d; }
+		#kutu:last-child li {float:left;clear:none;margin-right:10px;}
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="anasayfa.html">
+                <input type="image" src="gps.png" value="GitGör.com" width="140px" style="margin-left:40px;">
+            </a>
+            <div>
+                <!-- Button 5 Hakkımızda-->
+                <a href="hakkımızda.html">
+                  <button class="button-5" role="button">Hakkımızda </button>
+                </a>
+                <!-- Button 6 İletişim-->
+                <a href="iletişim.html" class="sag">
+                    <button class="button-6" role="button">İletişim </button>
+                </a>
+                <!-- Button 2 İller-->
+                <a href="iller.html" class="sag">
+                    <button class="button-2" role="button">İller</button>
+                </a>
+                <!-- Button 3 İnsider-->
+                <a href="insider.html" class="sag">
+                  <button class="button-3" role="button">İnsider Code Academy</button>
+              </a>
+              &#160;&#160;
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+
+<center>
+        <h1>Afyonkarahisar Gezi Rehberi</h1>
+      </center>
+<br><br><br>
+<center>
+  <h1>Afyonkarahisar Kalesi</h1>
+</center>
+<br><br><br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/JeBfRTfHszKdPbvc6')">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/65/ae/30/karahisar-kalesi.jpg?w=1200&h=-1&s=1" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br><br>
+<center><p class="illeryazı">
+  226 metre yükseklikteki volkanik bir kaya kütlesi üzerinde sunduğu büyüleyici manzarayla kartpostalları süsleyen Afyonkarahisar Kalesi, şehrin en önemli simgesel <br> yapısı olarak ilgi görüyor. Yerli ve yabancı turistlerin en çok ziyaret ettiği yer olan ve uzun tarihi M.Ö. 1350 yılında Hitit İmparatorluğu dönemine kadar uzayan <br> görkemli kale, tarihi boyunca Frig, Bizans, Selçuklu ve Osmanlı dönemlerinde de aktif olarak kullanılmış. Selçuklu döneminde büyük değişikliklere uğrayan ve <br> günümüzdeki halini alan kale, o dönemlerde halk arasında Karahisar Kalesi olarak biliniyordu.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Pek çok ünlü türkü ve efsaneye konu olan, Anadolu'nun en zor ele geçirilebilen kalelerinden biri olarak gösterilen Afyonkarahisar Kalesi’nin günümüze kadar sağlam kalmış <br> iç kale bölümlerinde unutulmaz bir gezi yapabilir, devasa surlardan Afyonkarahisar’ın en güzel manzaralarını izleyebilirsiniz. 3. Selim döneminde inşa edilen sarnıçları ve <br> kuleleri de yakından görebileceğiniz, Türkiye'nin en önemli tarihi hazinelerinden biri olan Afyonkarahisar Kalesi’ni hem kendi başınıza hem de rehberli tarih ve kültür turlarıyla gezebilirsiniz.
+</p>
+</center>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<center>
+  <h1>Acıgöl Kuş Cenneti</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/f4cS8tqVEkzpF1K18')">
+<img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/27062013/e3827a3f-55d5-42eb-802a-763d42cb70b0.jpg?format=jpg&quality=50" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  Türkiye'nin en özel tabiat haritalarında biri olan ve bir bölümü Afyonkarahisar bir bölümü ise Denizli sınırlarında uzanan Acıgöl Kuş Cenneti, her mevsim doğa tutkunlarını kendine çekiyor. 41 kilometrekare büyüklüğünde olan ve 20 kilometresi Afyonkarahisar sınırlarında kalan kuş cenneti, özellikle yıl boyu burada yaşayan flamingo sürüleri ile ünlü. Karabatak, yaban ördeği, turna, yaban kazı, pelikan ve leylek gibi 20 türden binlerce kuşa ev sahipliği yapan Acıgöl, göç dönemlerinde de binlerce göçmen kuşla çok az yerde görebileceğiniz benzersiz bir manzara sunuyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Seyir teraslarından kartal, şahin ve atmaca gibi yırtıcı kuşların da harika fotoğraflarını çekebilir, göl çevresindeki yürüyüş parkurlarında spor yapabilir veya mesire alanlarında doğanın içinde dinlendirici bir gün geçirebilirsiniz. Dağ eteklerinde uzanan yemyeşil yaylalarda kuş cennetinin panoramik manzaralarını izleyebilir, sessiz ve huzurlu ortamın tadını çıkarabilirsiniz.
+</p>
+</center>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Frig Vadisi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/bwQEpRiLoYqNupVh7')">
+<img src="https://i0.wp.com/nerdesinbahar.com/wp-content/uploads/2020/06/20190505_113610.jpg?fit=1099%2C824&ssl=1 " style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Afyonkarahisar, Kütahya ve Eskişehir sınırlarında uzanan büyüleyici Frig Vadisi, tüm dünyadan doğa, tarih, kültür ve arkeoloji meraklarını kendine çekiyor. 3000 yıl önce <br> Frigya döneminde yerleşim yeri olarak kullanılan ve yumuşak volkanik kayalar oyularak inşa edilen mağara evler, kaleler, devasa taş anıtlarla süslü vadi, Midas'ın <br> kulakları gibi pek çok ünlü efsaneye de konu olmuş.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Bölgede uzun süre hüküm süren Frigya uygarlığının kültürel yapısını görme şansı bulabileceğiniz ve birbirinden ilginç kaya oluşumları arasında unutulmaz bir gün <br> geçirebileceğiniz Frig Vadisi’nde at safarileri, bisiklet gezileri ve trekking turlarına katılarak keşfe çıkabilirsiniz. Avdalaz Kalesi surlarında panoramik manzaralar <br> izleyebileceğiniz, binlerce yıllık kaya mezarlarını inceleyebileceğiniz vadi, her köşesini saran tarihi hazineleriyle adeta bir açık hava müzesini andırıyor. 500 kilometreyi aşan uzunluğuyla ülkemizin en uzun yürüyüş parkurlarından olan Frig Vadisi’nin belirli bölümlerini her mevsim düzenlenen rehberli turlarla gezebilirsiniz.
+</p>
+
+<br><br><br><br><br>
+
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Eber Gölü</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/KF9bBVDidfs8LVsT6')">
+<img src="https://i.sozcucdn.com/wp-content/uploads/2021/06/28/iecrop/f529c53e-2d0b-449d-82aa-7ea8dc4c0472_16_9_1624877474.jpg?w=900&h=900&mode=crop&scale=both" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Türkiye'nin dört bir yanından doğa ve fotoğrafçılık tutkunlarını kendine çeken büyüleyici Eber Gölü, Afyonkarahisar'a sadece 1 saat uzaklıkta. Onlarca ender görülen kuş türüne ev sahipliği yapan ve Türkiye'nin en büyük 12. gölü olan Eber Gölü, 1992 yılından beri 1. derece sit alanı olarak korunuyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Kendine özgü ekosistemi, yüzlerce bitki türü ve vahşi yaşam zenginliği ile dikkat çeken göl, aynı zamanda nesli tükenmekte olan karabataklar ve tepeli pelikanlarıyla da ünlü. <br> 21 metre derinliğe ulaşan ve ballık bolluğundan dolayı balık avlama etkinliklerinin de düzenlendiği tatlı su gölünü yürüyüş parkurlarında keşfe çıkabilir, göl manzaralı <br> mesire alanlarında yılın yorgunluğunu atabilir veya seyir teraslarından yüzlerce kuşun en güzel fotoğraflarını çekebilirsiniz.
+</p>
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>İscehisar Peribacaları</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/DqozQe97dBsdhpgy9')">
+<img src="https://www.otelcenneti.com/uploads/resimler/iscehisar-peri-bacalari-afyon.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Kendine özgü jeolojik yapısı ile ülkemizin en özel noktalarından olan Afyonkarahisar’da volkanik patlamalarla oluşarak binlerce yılda rüzgârlar ve yağmurlarla şekillenmiş İscehisar peribacalarını da kesinlikle yakından görmelisiniz. Şehrin en çok ziyaret edilen doğa harikalarından olan ve sadece 30 kilometre uzaklıktaki İscehisar sınırlarında yer alan devasa peribacaları, büyüleyici bir manzarayı gözlerinizin önüne serecek.
+</p>
+</center>
+<br>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="footer">
+  <div class="footer_container">
+      <div id="kutu">
+          <b>Çalışanlar</b>
+          <ul>
+              <li>Yunus Emre Kavak</li>
+              <li>Zahid Önal</li>
+              <li>Emirhan Uslu</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:150px;" >
+          <b>İletişim</b>
+          <ul>
+              <li>0 551 646 90 69</li>
+              <li>0 552 829 21 06</li>
+              <li>yunusemrekavak777@gmail.com</li>
+              <li>onalzahid1@gmail.com</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:500px; ">
+          <b>Sosyal Medya</b>
+          <ul>
+              <li>İnstagram - emrekawak </li>
+              <li>İnstagram - usluemirhann </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

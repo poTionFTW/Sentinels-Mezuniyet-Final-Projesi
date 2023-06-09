@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<title>GitGör Trabzon </title>
+
+    <head>
+        <style>
+
+            a.nounderline {text-decoration: none; }
+            .header {
+  background-color: #007bff;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sag{
+  margin-left: 10px;
+}
+.sag2{
+  margin-right: 20px;
+}
+a {text-decoration: none; }
+.item {
+  height: 500px;
+  width:500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.button-1 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-1:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .button-1:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-1:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .button-1:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-1:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-1:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48Dpx;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-6 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-6:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-6:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-6:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-6:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-6:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-6:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-2 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-2:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-2:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-2:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-2:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-2:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-2:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-3 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-3:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-3:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-3:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-3:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-3:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-3:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-4 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-4:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-4:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-4:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-4:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-4:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-4:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  body,h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+  float: left;
+  border-radius: 30px;
+  left: 10px;
+}
+
+.illeryazı {
+  font-size: 15px;
+  
+} 
+
+.linkdeneme {
+  cursor: pointer
+} 
+
+.footer { background:#007bff;width:100%; height:269px;float:left;color:white; font-family:arial;}
+		.footer #kutu b {font-size:14px;}
+		* {margin:0px;padding:0px;}
+		.footer_container{width:768px; height:175px; margin:30px auto;}
+		ul {list-style-type:none;margin:17px 0;padding:0px;}
+		#kutu {width:auto; height:1px; float:left; color: #ffffff;}
+		ul li {float:left;font-family:tahoma; font-size:12px; margin-bottom:8px; clear:left; color:#2d2d2d; }
+		#kutu:last-child li {float:left;clear:none;margin-right:10px;}
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="anasayfa.html">
+                <input type="image" src="gps.png" value="GitGör.com" width="140px" style="margin-left:40px;">
+            </a>
+            <div>
+                <!-- Button 5 Hakkımızda-->
+                <a href="hakkımızda.html">
+                  <button class="button-5" role="button">Hakkımızda </button>
+                </a>
+                <!-- Button 6 İletişim-->
+                <a href="iletişim.html" class="sag">
+                    <button class="button-6" role="button">İletişim </button>
+                </a>
+                <!-- Button 2 İller-->
+                <a href="iller.html" class="sag">
+                    <button class="button-2" role="button">İller</button>
+                </a>
+                <!-- Button 3 İnsider-->
+                <a href="insider.html" class="sag">
+                  <button class="button-3" role="button">İnsider Code Academy</button>
+              </a>
+              &#160;&#160;
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+
+<center>
+        <h1>Trabzon Gezi Rehberi</h1>
+      </center>
+<br><br><br>
+<center>
+  <h1>Uzungöl</h1>
+</center>
+<br><br><br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/ipheh67dTmDKL3rb7')">
+<img src="https://resim.haber61.net/upload/old/20170525AW078170_01_1.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br><br>
+<center><p class="illeryazı">
+  Trabzon’a 99 kilometre, Çaykara ilçesine ise sadece 19 kilometre uzaklıkta yer alan Uzungöl, Trabzon’un en sevilen ve en çok ziyaret edilen turistik noktalarından biri. Her yıl yüz binlerce turist tarafından ziyaret edilen Uzungöl, Haldizen Deresi’nin doğal yollarla önünün kapanması yoluyla oluşmuş. Deniz seviyesinden 1100 metre yüksekte yer alan ve çevresi çam ormanları ile görkemli dağlar tarafından çevrilenmiş Uzungöl, aynı zamanda Türkiye’nin yağmur ormanlarına da ev sahipliği yapıyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  2004 yılında çevre koruma alanı ilan edilerek doğal güzellikleri korunan Uzungöl; 60'dan fazla endemik bitki türü, 250'den fazla kuş türü ve onlarca memeli türü ile tüm dünyadan <br> doğa severlerin ilgisini çekiyor. Her mevsim muhteşem doğa manzaraları için ziyaret edilen Uzungöl’de yaz aylarında kano, deniz bisikleti ve sandallarla gezebilir, gölün <br> çevresini saran yürüyüş yollarında tertemiz havada keyifli doğa yürüyüşleri yapabilir; ATV turları ve bisiklet gezileri ile Uzungöl çevresini keşfe çıkabilirsiniz. Göl üzerinde <br> kuş bakışı büyüleyici manzaralar izlemek için yamaç paraşütü etkinliklerine de katılabilir veya yaz aylarında yayla şenlikleri ile eğlenceli zaman geçirebilirsiniz.
+</p>
+</center>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<center>
+  <h1>Akçakale</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/PsQm11JvfavwoiS17')">
+<img src="data:image/jpeg;base64,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" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  Trabzon şehrine 25 kilometre uzaklıkta, Karadeniz kıyısında yer alan turistik belde Akçakale, Karadeniz’in sevilen tatil merkezlerinden Akçaabat ilçesine bağlı. Hem Akdeniz ve Ege plajlarını aratmayan Akçakale Plajı hem de tarihi hazineleriyle Trabzon'da en çok ziyaret edilen yerlerinden biri olan Akçakale'de beldenin ismini aldığı 900 yıllık Akçakale Kalesi, panoramik Karadeniz manzaraları sunduğu için en çok ziyaret edilen yer.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Sera Gölü, Kayabaşı Tabiat Parkı ve Hıdırnebi Yaylası gibi çok ziyaret edilen turistik noktalara da ev sahipliği yapan Akçakale'de yaz aylarında Karadeniz'in serin sularının tadını çıkarabilir, akşamlar ise klasik Karadeniz mimarili ahşap konaklarla süslü belde sokaklarında keyifle gezebilirsiniz.
+</p>
+</center>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Sümela Manastırı</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/KSCTHuojKJWwW3tF9')">
+<img src="https://cdn1.ntv.com.tr/gorsel/YC_lrLzfbU-EJCVcrSkfOw.jpg?width=1000&mode=crop&scale=both" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Trabzon’un dünyaca ünlü tarihi hazinelerinden ve en bilinen simgesel yapılarından biri olan Sümela Manastırı, her yıl binlerce kişi tarafından ziyaret ediliyor. Meryem Ana Manastırı olarak da bilinen Sümela Manastırı, Trabzon'un Maçka ilçesine bağlı Altındere Köyü sınırlarında, Altındere Vadisi'ne hakim sarp kayalıklar üzerine inşa edilmiş büyüleyici bir mimari eser.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Deniz seviyesinden 300 metre yükseklikte yer alan ve M.S. 375 yılında Bizans İmparatorluğu döneminde inşa edildiği düşünülen manastır, 16. yüzyılda genişletilmiş ve Osmanlı İmparatorluğu'nun bir parçası olduktan sonra da özenle korunmuş. Manastırın ana şapeli, tavan ve duvarlarını süsleyen büyüleyici freskler, kaya kilisesi, misafirhane ve kütüphanesini gezerken tarihte unutulmaz bir yolculuğa çıkacaksınız. Kiliseye su taşınan etkileyici su kemerlerini de mutlaka incelemenizi önerdiğimiz Sümela Manastırı, sadece Trabzon’un değil ülkemizin en etkileyici tarihi yapılarından biri.
+</p>
+
+<br><br><br><br><br>
+
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1> Akçaabat</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/yUnYBh6NVvHAKyy29')">
+<img src="https://i.sozcucdn.com/wp-content/uploads/2017/01/5-20.jpg?w=900&h=900&mode=crop&scale=both" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Trabzon'un nüfus bakımından en büyük ilçesi olan ve şehir merkezine sadece 13 kilometre uzaklıkta Karadeniz kıyısında yer alan Akçaabat, lezzetli köftesi ve horonu <br> ile ünlü turistik bir ilçe. Gezilecek yerden bakımından çok zengin olan Akçaabat; çam ağaçları arasında sıralanmış tarihi Osmanlı evleri, Sera Gölü gibi doğal <br> güzellikleri ve Hıdırnebi Yaylası gibi ünlü yaylaları ile Karadeniz gezilerinin değişmez adreslerinden biri.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Ülkemizde en büyük mağaralardan biri olan Çalköy Mağarası'na de ev sahipliği yapan Akçaabat, özellikle Osmanlı döneminden kalan ve günümüze kadar korunmuş <br> evlerin sıralandığı Ortamahalle için yerli ve yabancı turistler tarafından ziyaret ediliyor. Keyifli bir günübirlik gezi yapabileceğiniz Akçaabat'a Trabzon Otogarı’nda <br> her yarım saatte bir bulabileceğiniz minibüslerle rahatlıkla ulaşım sağlayabilirsiniz.
+</p>
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Maçka</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/xoQrkLXpXEc5HerT6')">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/e8/10/d3/sumela-manastiri.jpg?w=400&h=-1&s=1" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Sümela Manastırı, Vazelon Manastırı ve Peristera Manastırı gibi dünyaca ünlü tarihi yapılara ev sahipliği yapan Maçka ilçesi, Trabzon merkezine sadece 29 kilometre uzaklıkta. <br> Sadece Trabzon'da değil, tüm Türkiye'de düzenlenen tarih ve kültür gezilerinin önemli adreslerinden biri olan Maçka, binlerce yıllık uzun tarihinden kalan ve dağ <br> eteklerinde inşa edilmiş büyüleyici manastırların yanı sıra tertemiz havası, tarihi konaklarla süslü sokakları; Solma Yaylası, Kiraz Yaylası Lapazan Yaylası <br> gibi Trabzon'un en ünlü yaylalarıyla mutlaka keşfetmeniz gereken yerler arasında. Serin yaylaları ve görkemli manastırları gezdikten sonra en güzel Karadeniz <br> köylerinden biri olan Şimşirli Köyü’ne de uğramayı ve yöresel ev yemekleri tatmayı unutmayın.
+</p>
+</center>
+<br>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="footer">
+  <div class="footer_container">
+      <div id="kutu">
+          <b>Çalışanlar</b>
+          <ul>
+              <li>Yunus Emre Kavak</li>
+              <li>Zahid Önal</li>
+              <li>Emirhan Uslu</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:150px;" >
+          <b>İletişim</b>
+          <ul>
+              <li>0 551 646 90 69</li>
+              <li>0 552 829 21 06</li>
+              <li>yunusemrekavak777@gmail.com</li>
+              <li>onalzahid1@gmail.com</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:500px; ">
+          <b>Sosyal Medya</b>
+          <ul>
+              <li>İnstagram - emrekawak </li>
+              <li>İnstagram - usluemirhann </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

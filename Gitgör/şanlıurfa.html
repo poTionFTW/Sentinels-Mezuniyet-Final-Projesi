@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<title>GitGör Şanlıurfa </title>
+
+    <head>
+        <style>
+
+            a.nounderline {text-decoration: none; }
+            .header {
+  background-color: #007bff;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sag{
+  margin-left: 10px;
+}
+.sag2{
+  margin-right: 20px;
+}
+a {text-decoration: none; }
+.item {
+  height: 500px;
+  width:500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.button-1 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-1:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .button-1:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-1:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .button-1:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-1:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-1:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48Dpx;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-6 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-6:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-6:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-6:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-6:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-6:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-6:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-2 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-2:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-2:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-2:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-2:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-2:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-2:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-3 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-3:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-3:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-3:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-3:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-3:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-3:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-4 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-4:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-4:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-4:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-4:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-4:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-4:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  body,h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+  float: left;
+  border-radius: 30px;
+  left: 10px;
+}
+
+.illeryazı {
+  font-size: 15px;
+  
+} 
+
+.linkdeneme {
+  cursor: pointer
+} 
+
+.footer { background:#007bff;width:100%; height:269px;float:left;color:white; font-family:arial;}
+		.footer #kutu b {font-size:14px;}
+		* {margin:0px;padding:0px;}
+		.footer_container{width:768px; height:175px; margin:30px auto;}
+		ul {list-style-type:none;margin:17px 0;padding:0px;}
+		#kutu {width:auto; height:1px; float:left; color: #ffffff;}
+		ul li {float:left;font-family:tahoma; font-size:12px; margin-bottom:8px; clear:left; color:#2d2d2d; }
+		#kutu:last-child li {float:left;clear:none;margin-right:10px;}
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="anasayfa.html">
+                <input type="image" src="gps.png" value="GitGör.com" width="140px" style="margin-left:40px;">
+            </a>
+            <div>
+                <!-- Button 5 Hakkımızda-->
+                <a href="hakkımızda.html">
+                  <button class="button-5" role="button">Hakkımızda </button>
+                </a>
+                <!-- Button 6 İletişim-->
+                <a href="iletişim.html" class="sag">
+                    <button class="button-6" role="button">İletişim </button>
+                </a>
+                <!-- Button 2 İller-->
+                <a href="iller.html" class="sag">
+                    <button class="button-2" role="button">İller</button>
+                </a>
+                <!-- Button 3 İnsider-->
+                <a href="insider.html" class="sag">
+                  <button class="button-3" role="button">İnsider Code Academy</button>
+              </a>
+              &#160;&#160;
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+
+<center>
+        <h1>Şanlıurfa Gezi Rehberi</h1>
+      </center>
+<br><br><br>
+<center>
+  <h1>Balıklıgöl</h1>
+</center>
+<br><br><br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/GCJ1r2xY8ead8UkD8')">
+<img src="https://scontent.fist7-1.fna.fbcdn.net/v/t1.6435-9/162531019_5901336176558648_2854348019379939026_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=973b4a&_nc_ohc=rpu0ymXI544AX-ZuXP6&_nc_ht=scontent.fist7-1.fna&oh=00_AfA-ShP4d-YU2FaNPmcwmRVUcijwqqwYRPEwGA_vBKHdfA&oe=64A9717B" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br><br>
+<center><p class="illeryazı">
+  Şanlıurfa tarihi yerler listemizin ilk sırasında efsanelere konu olan Balıklıgöl yer alıyor. Göl, 150 metre uzunluğunda ve 30 metre genişliğinde, aynı zamanda derinliği 5 <br> metreyi buluyor. İçinde efsanelerden de aşina olduğumuz balık türleri yer alıyor. Üstelik bu balıklara halk tarafından saygı gösteriliyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Rivayete göre Hz. İbrahim’in ateşe atılmasının ardından, bir mucize gerçekleşir ve her yer güllük gülistanlık olur. Bu mucizenin gerçekleştiği yerin ise Balıklıgöl <br> olduğuna inanılır. Balıklıgöl, Şanlıurfa’nın en önemli simgelerinden biri.
+</p>
+</center>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<center>
+  <h1>Şanlıurfa Kalesi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/Fs4SHdd1LhVJ6CBFA')">
+<img src="https://i.pinimg.com/736x/26/8f/ed/268fed563e497b150daf36ca6b64e3c3.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  Şehrin en önemli simgelerinden bir diğeri ise Urfa Kalesi. Kalenin M.Ö. 10.000 yıllarına ait neolitik bir alan üzerine kurulduğu tahmin ediliyor. Tarihi yapının hemen <br> yanından çıkarılan ve Şanlıurfa Müzesi’nde sergilenen 12.000 yılık Balıklıgöl Heykeli ve Kale alanı, havzanın tarihine tanıklık eder nitelikte. Kale, antik dönemde <br> Osroene tarafından inşa edilmiş.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Kalenin duvarları ise MS 814’te Abbâsîler tarafından yapılmış. Şehre kuş bakışı bir görünüm sunan kale, günümüzde açık hava müzesi konseptinde ziyaretçilerini <br> misafir ediyor.
+</p>
+</center>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Rizvaniye Cami</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/zwAZnpmhEDLqTsu1A')">
+<img src="https://images.ucuzabilet.com/resources/img/feeds/city/GNY.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Balıklıgöl’ün kuzey kısmında yer alan tarihi cami, 1736 yılında Rakka Valisi Rıdvan Ahmet Paşa tarafından yaptırılmış. Burası yapı olarak mihraba paralel ve üç kubbeli <br> bir görünümde inşa edilmiştir. Caminin doğu ucunda tek şerefeli bir minare göze çarpıyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Süsleme açısından yapının en ilginç kısmı, giriş kapısıdır. Tarihi ahşap kapı, hiç çivi kullanılmadan geçme ve kakma tekniğiyle hazırlanmıştır. Kapı üzerinde yer alan <br> zengin bitkisel ve geometrik desenler oldukça ilgi çekicidir. Caminin medrese kısmı ise cami avlusunun kuzeyinde yer alır. Cami, Osmanlıca telaffuz farkından dolayı <br> birçok kaynakta “Rıdvaniye Medresesi” olarak geçiyor.
+</p>
+
+<br><br><br><br><br>
+
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1> Göbeklitepe</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/XGE7YCRHTL6bDQmx9')">
+<img src="https://en.antaliy.com/wp-content/uploads/2022/10/Gobekli-Tepe.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Listemizin 4. sırasında tarihin akışını değiştiren yer olarak bilinen Göbeklitepe yer alıyor. Geçtiğimiz zamanlarda Göbeklitepe’de gerçekleştirilen kazılarda, yerleşik yaşama <br> geçişle ilgili mevcut bilgileri alt üst edecek buluntular keşfedilmişti. Göbeklitepe, M.Ö. 10.000 yani günümüzden 12.000 yıl öncesine tarihlenen Neolitik döneme ait bir inanç <br> merkezi. 80 dönümlük alanı çevreleyen ören yeri, Kültür ve Turizm Bakanlığı tarafından 2005 yılında 1. Derece arkeolojik sit alanı ilan edilmiştir. Göbeklitepe, aynı <br> zamanda tarihi anekdotlarda bilinen en eski ve en büyük tapınaktır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Dev sütunlardan ve üst üste dizilmiş ağır taşlardan oluşan Göbeklitepe’ye dair hala gizemi çözülemeyen birçok nokta bulunuyor. O dönemde el arabası ve iş aletleri <br> bulunmadığı için yapının inşa süreci gizemini hala koruyor. Tapınağı oluşturan taşların taşınabilmesi için muhtemelen çok sayıda insanın ve yük hayvanının gücünden <br> yararlanıldığı üzerinde duruluyor. Sütunların üzerinde bulunan hayvan figürü kabartmaları ise oldukça etkileyici. Eğer Şanlıurfa’ya yolunuz düşerse bu gizemli antik <br> yapıyı mutlaka görmenizi tavsiye ediyoruz.
+</p>
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Halfeti</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/UJj1dDNRukMCZQFd8')">
+<img src="https://images.etstur.com/definitions/etstur/page_management/432dbfb4e73d9aa24c4eb080c82240bc_20210323123252.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Şanlıurfa merkez ilçesine 112 km uzaklıkta yer alan Halfeti’nin yüzölçümü 646 km² civarında. İlçe M.Ö. 855 yılında Asur Kralı III. Salmanassar tarafından zapt edildiği <br> zaman “Şitamrat” olarak adlandırılıyordu. Yunanlılar ilçenin adını değiştirerek “Urima” olarak isimlendirdiler. Süryaniler ise, ilçe için “Kal’a Rhomeyta” ve <br> “Hesna d’Romaye” adlarını tercih ettiler. Yavuz Sultan Selim zamanında Osmanlıların egemenliğine geçen ilçe, günümüzde de kullanılan “Urumgala” ve <br> “Rumkale” adlarıyla biliniyor. İlçenin büyük bir bölümü Birecik Barajı’nın göl suları altında kalmıştır. Kentin simgesi haline gelen ‘siyah gül’ ise yerli ve <br> yabancı tüm ziyaretçilerin ilgisini çekiyor. Peki nasıl gidilir? Tekne ile ulaşım sağlanarak Aziz Nerses Kilisesi’nin, Barsavma Manastırı’nın ve daha birçok tarihi <br> yapının yer aldığı Rumkale’ye kolaylıkla ulaşım sağlanabilir.
+</p>
+</center>
+<br>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="footer">
+  <div class="footer_container">
+      <div id="kutu">
+          <b>Çalışanlar</b>
+          <ul>
+              <li>Yunus Emre Kavak</li>
+              <li>Zahid Önal</li>
+              <li>Emirhan Uslu</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:150px;" >
+          <b>İletişim</b>
+          <ul>
+              <li>0 551 646 90 69</li>
+              <li>0 552 829 21 06</li>
+              <li>yunusemrekavak777@gmail.com</li>
+              <li>onalzahid1@gmail.com</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:500px; ">
+          <b>Sosyal Medya</b>
+          <ul>
+              <li>İnstagram - emrekawak </li>
+              <li>İnstagram - usluemirhann </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

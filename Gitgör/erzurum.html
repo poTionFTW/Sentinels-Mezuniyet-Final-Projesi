@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<title>GitGör Erzurum </title>
+
+    <head>
+        <style>
+
+            a.nounderline {text-decoration: none; }
+            .header {
+  background-color: #007bff;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sag{
+  margin-left: 10px;
+}
+.sag2{
+  margin-right: 20px;
+}
+a {text-decoration: none; }
+.item {
+  height: 500px;
+  width:500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.button-1 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-1:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .button-1:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-1:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .button-1:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-1:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-1:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48Dpx;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-6 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-6:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-6:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-6:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-6:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-6:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-6:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-2 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-2:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-2:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-2:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-2:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-2:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-2:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-3 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-3:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-3:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-3:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-3:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-3:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-3:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-4 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-4:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-4:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-4:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-4:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-4:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-4:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  body,h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+  float: left;
+  border-radius: 30px;
+  left: 10px;
+}
+
+.illeryazı {
+  font-size: 15px;
+  
+} 
+
+.linkdeneme {
+  cursor: pointer
+} 
+
+.footer { background:#007bff;width:100%; height:269px;float:left;color:white; font-family:arial;}
+		.footer #kutu b {font-size:14px;}
+		* {margin:0px;padding:0px;}
+		.footer_container{width:768px; height:175px; margin:30px auto;}
+		ul {list-style-type:none;margin:17px 0;padding:0px;}
+		#kutu {width:auto; height:1px; float:left; color: #ffffff;}
+		ul li {float:left;font-family:tahoma; font-size:12px; margin-bottom:8px; clear:left; color:#2d2d2d; }
+		#kutu:last-child li {float:left;clear:none;margin-right:10px;}
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="anasayfa.html">
+                <input type="image" src="gps.png" value="GitGör.com" width="140px" style="margin-left:40px;">
+            </a>
+            <div>
+                <!-- Button 5 Hakkımızda-->
+                <a href="hakkımızda.html">
+                  <button class="button-5" role="button">Hakkımızda </button>
+                </a>
+                <!-- Button 6 İletişim-->
+                <a href="iletişim.html" class="sag">
+                    <button class="button-6" role="button">İletişim </button>
+                </a>
+                <!-- Button 2 İller-->
+                <a href="iller.html" class="sag">
+                    <button class="button-2" role="button">İller</button>
+                </a>
+                <!-- Button 3 İnsider-->
+                <a href="insider.html" class="sag">
+                  <button class="button-3" role="button">İnsider Code Academy</button>
+              </a>
+              &#160;&#160;
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+
+<center>
+        <h1>Erzurum Gezi Rehberi</h1>
+      </center>
+<br><br><br>
+<center>
+  <h1>Palandöken Kayak Merkezi</h1>
+</center>
+<br><br><br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/mZa4mgvDsQVHrwxY6')">
+<img src="https://palandöken.com/wp-content/uploads/2022/01/Adsiz-tasarim.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br><br>
+<center><p class="illeryazı">
+  Kış aylarındaki sert iklimiyle bilinen Erzurum, Türkiye'nin en popüler kış tatili merkezlerinden biri olan Palandöken Kayak Merkezi’yle kış turizmi açısından en önemli <br> şehirlerimizden biri. 6 aydan daha uzun bir kayak sezonuna sahip olan ve 3125 metre yükseklikteki Palandöken Dağı eteklerinde hizmet veren kayak merkezi, 1993 <br> yılında açıldığı günden beri her yıl binlerce yerli ve yabancı turistleri misafir ediyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Dünya standartlarında tasarlanmış kayak pistleriyle günde 12.000 kişinin aynı anda kayak yapmasına imkan veren merkezde 10 telesiyej, 2 baby lift, 1 teleski ve 1 gondol <br> lift gibi teknik olanaklar da sunuluyor. Telesiyejlerle ulaşabileceğiniz 1000 metre yükseklikteki Ejder Tepesi’nde muhteşem panoramik kış fotoğrafları çekebileceğiniz <br> Palandöken’in kolay, orta ve zor olarak düzenlenmiş pistlerinde ise her yaş grubu için kayak ve snowboard eğitimleri de alabilirsiniz.
+</p>
+</center>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<center>
+  <h1>Tortum Şelalesi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/9RifVkePETmZW4Hh9')">
+<img src="https://i.sozcucdn.com/wp-content/uploads/2017/05/t1-2.jpg?w=900&h=900&mode=crop&scale=both" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  Erzurum'un en bilinen ve çok ziyaret edilen doğa harikalarından biri olan Tortum Şelalesi, Türkiye'nin en büyük, dünyanın ise 3. büyük şelalesi olmasıyla özel bir <br> öneme sahip. 48 metre yükseklik ve 21 metre genişliğiyle benzersiz bir manzara sunan Tortum Şelalesi’ni özellikle bahar ve yaz aylarında düzenlenen fotoğrafçılık <br> ve doğa gezileriyle keşfe çıkabilir, büyüleyici doğal güzellikler arasında yılın yorgunluğunu atabilirsiniz.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Heyelanla oluşan Tortum Gölü’nün en sevilen trekking parkurlarından biri olan ve bölgenin doğa sporları merkezlerinden biri haline gelen Tortum Şelalesi’nin çevresinde <br> mesire alanları, iyi düzenlenmiş yürüyüş parkurları ve kaya tırmanma alanları gibi olanaklar da bulabilirsiniz. Tortum Şelale’nde kalabalıklardan uzakta dinlendirici <br> bir piknik yapabilir, seyir teraslarından ise kartpostal güzelliğinde fotoğraflar çekebilirsiniz.
+</p>
+</center>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Çifte Minareli Medrese</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/er48CBzQoc5voxaQA')">
+<img src="https://www.kulturportali.gov.tr/contents/images/ERZURUM%20%C3%87ifte%20Minareli%20Medrese%20Hatuniye%20Medresesi%20Murat%20%C3%96CAL%20(7).jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Erzurum'un simgesel yapılarından biri olan ve ziyaretçilerini büyüleyici mimarisiyle etkileyen Çifte Minareli Medrese, 13. yüzyılda Selçuklular döneminden günümüze <br> kalan bir şaheser. Hatuniye Medresesi olarak da tarihi kayıtlarda geçen ve ünlü Selçuklu sultanlarından Alâeddin Keykubad’ın kızı Hundi Hatun tarafından inşa <br> ettirilen devasa medrese, Selçuklu klasik mimari özelliklerini en iyi görebileceğiniz yapılar arasında. Etkileyici bitkisel desenlerin yanı sıra Orta Asya simgelerinden <br> kartal ve yılan figürleriyle de süslü olan, el yapımı taş kabartmalarıyla her köşesi sanat eserini andıran Çift Minareli Medrese, tarihi atmosferini günümüze kadar <br> korumayı başarmış.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Osmanlı döneminde kışla, Cumhuriyet döneminde ise müze olarak kullanılan Çifte Minareli Medrese, günümüzde de içindeki sergi salonlarında Erzurum'un tarihi ve kültürel <br> dokusunu yansıtan yüzlerce etnografik esere ev sahipliği yapıyor. Her yıl binlerce yerli ve yabancı turist tarafından ziyaret edilen, iki katlı ve açık avlulu olarak tasarlanan tarihi medresesinin taş mimarili eğitim odalarını gezebilir; çarpıcı taç kapısı ve turkuaz renkli çinilerle süslü minaresinin harika fotoğraflarını çekebilirsiniz.
+</p>
+
+<br><br><br><br><br>
+
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1> Erzurum Kalesi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/pu2nbrGqgLwQqT9h7')">
+<img src="https://nemruttours.org/wp-content/uploads/2022/12/g_0001_erzurum.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  2000 metre uzunluğu bulan devasa surlarıyla şehrin en önemli tarihi hazinelerinden biri olan Erzurum Kalesi, yerli ve yabancı turistlerin ilk uğradığı yerlerden biri. 415 <br> yılında Roma İmparatorluğu döneminde inşa edilen ve uzun tarihinde Asur, Pers, Roma, Bizans, Osmanlı dönemlerinde aktif olarak kullanılan devasa kaleye Saltuklu <br> Beyliği döneminde de İslami mimari özelliklerini yansıtan çeşitli eklemeler yapılmış.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Erzurum'a hakim bir konumda görkemli manzarası ile hemen dikkatinizi çekecek olan Erzurum Kalesi’nin bulunduğu alanda yerleşimin 2500 yıl öncesinde başladığı <br> söyleniyor. İç Kale Mescidi, Kırklar Türbesi, Ebu İshak Kazeruni Türbesi ve Ali Ağa Çeşmesi gibi önemli Osmanlı dönemi eserlerine ev sahipliği yapan kalenin etkileyici <br> bölümlerini gezebilir; Tebriz Kalesi, Erzincan Kalesi, Gürcü Kalesi, İstanbul Kapı ve Yenikapı gibi anıtsal kapıların harika fotoğrafları çekebilirsiniz. Geceleri <br> aydınlatıldığında en güzel manzaralarını görebileceğiniz Erzurum Kalesi’nin surları ve kulelerinden ise şehrin panoramik manzaralarını izleyebilirsiniz.
+</p>
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Tortum Gölü</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/4EHmvRaaRaBLLyGHA')">
+<img src="https://www.duybunu.com.tr/img/tr/min/erzurum/uzundere/gezi-rehberi/tortum-golu/tortum-golu.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Erzurum’da her doğa tutkununun mutlaka keşfetmesi gereken bir tabiat güzelliği olan Tortum Gölü, Erzurum ile Artvin arasında şehir merkezine yaklaşık 1,5 saat <br> uzaklıkta yer alıyor. Doğayla iç içe zaman geçirmek için gidebileceğiniz en güzel yerlerden olan ve rehberli doğa yürüyüşlerinin değişmez adreslerinden biri haline <br> gelen Tortum Gölü, bir heyelanla Tortum Çayı’nın kapanmasıyla oluşan bir heyelan set gölü.
+</p>
+</center>
+<br>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="footer">
+  <div class="footer_container">
+      <div id="kutu">
+          <b>Çalışanlar</b>
+          <ul>
+              <li>Yunus Emre Kavak</li>
+              <li>Zahid Önal</li>
+              <li>Emirhan Uslu</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:150px;" >
+          <b>İletişim</b>
+          <ul>
+              <li>0 551 646 90 69</li>
+              <li>0 552 829 21 06</li>
+              <li>yunusemrekavak777@gmail.com</li>
+              <li>onalzahid1@gmail.com</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:500px; ">
+          <b>Sosyal Medya</b>
+          <ul>
+              <li>İnstagram - emrekawak </li>
+              <li>İnstagram - usluemirhann </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+<title>GitGör İstanbul</title>
+
+    <head>
+        <style>
+
+            a.nounderline {text-decoration: none; }
+            .header {
+  background-color: #007bff;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sag{
+  margin-left: 10px;
+}
+.sag2{
+  margin-right: 20px;
+}
+a {text-decoration: none; }
+.item {
+  height: 500px;
+  width:500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.button-1 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-1:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .button-1:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-1:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .button-1:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-1:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-1:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48Dpx;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-6 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-6:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-6:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-6:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-6:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-6:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-6:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-2 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-2:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-2:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-2:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-2:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-2:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-2:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-3 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-3:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-3:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-3:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-3:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-3:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-3:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-4 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-4:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-4:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-4:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-4:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-4:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-4:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  body,h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+  float: left;
+  border-radius: 30px;
+  left: 10px;
+}
+
+.illeryazı {
+  font-size: 15px;
+  
+} 
+
+.linkdeneme {
+  cursor: pointer
+} 
+
+.footer { background:#007bff;width:100%; height:269px;float:left;color:white; font-family:arial;}
+		.footer #kutu b {font-size:14px;}
+		* {margin:0px;padding:0px;}
+		.footer_container{width:768px; height:175px; margin:30px auto;}
+		ul {list-style-type:none;margin:17px 0;padding:0px;}
+		#kutu {width:auto; height:1px; float:left; color: #ffffff;}
+		ul li {float:left;font-family:tahoma; font-size:12px; margin-bottom:8px; clear:left; color:#2d2d2d; }
+		#kutu:last-child li {float:left;clear:none;margin-right:10px;}
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="anasayfa.html">
+                <input type="image" src="gps.png" value="GitGör.com" width="140px" style="margin-left:40px;">
+            </a>
+            <div>
+                <!-- Button 5 Hakkımızda-->
+                <a href="hakkımızda.html">
+                  <button class="button-5" role="button">Hakkımızda </button>
+                </a>
+                <!-- Button 6 İletişim-->
+                <a href="iletişim.html" class="sag">
+                    <button class="button-6" role="button">İletişim </button>
+                </a>
+                <!-- Button 2 İller-->
+                <a href="iller.html" class="sag">
+                    <button class="button-2" role="button">İller</button>
+                </a>
+                <!-- Button 3 İnsider-->
+                <a href="insider.html" class="sag">
+                  <button class="button-3" role="button">İnsider Code Academy</button>
+              </a>
+              &#160;&#160;
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+
+<center>
+        <h1>İstanbul Gezi Rehberi</h1>
+      </center>
+<br><br><br>
+<center>
+  <h1>Ayasofya</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/wWtJvjhvPPCrVXTZ8')">
+<img src="https://www.magazinsortie.com/images/upload/AYASOFYA_CAMYY_1.jpg" alt="ayasofya" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<center><p class="illeryazı" >
+  Ayasofya Camii, İstanbul'un tarihi yarımadasında yer alan ve dünyanın en ünlü yapılarından biri olan bir camidir. İlk olarak Bizans İmparatoru I. Justinianus tarafından 537 yılında Ayasofya Kilisesi olarak inşa edilmiştir. Kilise, İstanbul'un o dönemdeki merkezi olan Konstantinopolis'te yer almaktadır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Ayasofya, döneminin mimari ve mühendislik harikası olarak kabul edilmektedir. İmparator Justinianus, Ayasofya'yı <br>İstanbul'da Hristiyanlığı temsil edecek büyüleyici bir kilise olarak inşa etmeyi amaçlamıştır. Kilisenin inşaatında binlerce işçi ve ustabaşı çalışmıştır ve tamamlanması <br> beş yıl sürmüştür.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Ayasofya, inşa edildiği dönemde dünyanın en büyük kubbesine sahip olan yapı olarak dikkat çekmiştir. Kubbenin yüksekliği 55.6 <br> metredir ve 31 metre çapındadır. Kilisenin iç dekorasyonu da oldukça etkileyicidir. Zengin mozaikler, mermer sütunlar ve çeşitli dönemlere ait sanat eserleriyle süslenmiştir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Ancak, 1453 yılında İstanbul'un Osmanlı İmparatorluğu tarafından fethedilmesiyle Ayasofya Kilisesi camiye dönüştürülmüştür. Osmanlı döneminde caminin mimari yapısında bazı değişiklikler yapılmıştır. Minareler eklenmiş, bazı mozaikler örtülmüş veya kapatılmıştır. Ayasofya Camii, Osmanlı İmparatorluğu'nun en önemli ibadet merkezlerinden biri haline gelmiştir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Ancak, 1935 yılında Türkiye Cumhuriyeti'nin kurucusu Mustafa Kemal Atatürk tarafından Ayasofya, müze olarak kullanılmak üzere açılmıştır. Bu dönemde caminin içerisindeki mozaikler ve diğer değerli eserlerin restore edilmesi ve korunması sağlanmıştır. Ayasofya, müze olarak ziyaretçilere açık kalmış ve dünya çapında önemli bir turistik mekan haline gelmiştir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  2020 yılında Türkiye'nin Yüksek İdare Mahkemesi'nin aldığı bir kararla Ayasofya'nın tekrar cami olarak kullanılmasına izin verilmiştir. Bu kararın ardından Ayasofya Camii, <br> 24 Temmuz 2020 tarihinde yeniden ibadete açılmıştır.
+</p>
+</center>
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<center>
+  <h1>Topkapı Sarayı</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/8dk8ywxBSxkrSTwJ9')">
+<img src="https://indismuhendislik.com/wp-content/uploads/2022/06/topkpk.jpg" alt="topkapı" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  Topkapı Sarayı Osmanlı imparatorluğu zamanında yaptırılmış olan bir tarihi yapıdır. Topkapı Sarayı yapımına 1465 tarihinde başlanmış ve yapımı 13 yıl <br> sürmüştür. Tam inşaası 1478 yılında tamamlanmıştır. Osmanlı mimarisi tarzında yapılmıştır. Topkapı Sarayı Osmanlı padişahlarının yaşamış olduğu devasa bir saraydır. Osmanlı Devleti'nin idare devlet merkezi olarak kullanılması amacı ile inşa ettirilmiştir. Topkapı Sarayı Fatih Sultan Mehmet tarafından yaptırılmış bir saraydır. Topkapı Sarayı <br> Osmanlı padişahı Abdülmecit tarafından ilk kez müze olarak açılmış ve kullanılmıştır. Topkapı Sarayı'nın mimarisi Davud Ağa ve Alaüddin'dir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Topkapı Sarayı 1924 yılında bazı bölümleri ziyaretçilere açılmıştır. Bu bölümler Bağdat Köşkü, Mustafa Paşa köşkü, Mecidiye köşkü, Hekimbaşı odası, Arz odası ve kubbet altı bölümüdür. Bu bölümler o dönemde de onarılmıştır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Topkapı Sarayı geçmişte Osmanlı Devleti tarafından yaptırılmış olan Devlet-i Aliyye'nin ana merkezi konumunda olan bir saraydır. Günümüzde ise Topkapı Sarayı müze <br> olarak yerli ve yabancı turistleri kabul etmektedir. Topkapı Sarayı İstanbul'da yer alan en eski tarihi yapılardan biridir. Mimar Sinan'da yapımında Mimarlık yapmış <br> ünlü mimarlardan biridir. Topkapı Sarayı günümüzde UNESCO Dünya miraslar listesine girmiş olan bir tarihi yapıdır. Yaklaşık olarak 600 yıllık bir tarihi bulunmaktadır. <br> Topkapı Sarayı'nın içerisinde pek çok köşk bulunmaktadır.
+</p>
+</center>
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Galata Kulesi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/xQ9PHFZECYbMvZK87')">
+<img src="https://turkishmuseums.com/Uploads/M%C3%BCze/Foto/Foto%C4%9Fraflar/b316be74-c10b-439f-b1e4-e892e516a000.png" alt="galata" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  Galata Kulesi 528 yılında inşa edilmiş İstanbul’un Galata semtinde yer alan (Karaköy’ün üst kısmı) ve şehrin en önemli sembolleri arasında yer alan bir kuledir. Kuleden İstanbul’un sahil kesimi başta olmak üzere Haliç ve İstanbul Boğazı panoramik olarak izlenebilmektedir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Galata Kulesi dünyanın en eski kulelerinden biri olarak kabul edilmektedir. Galata Kulesi 528 yılında Bizans İmparatoru Anastasius tarafından Fener Kulesi olarak inşa edilmiştir. 1204’deki IV.Haçlı Seferi’nde yüksek düzeyde hasar alan kule, 1348’de Cenevizliler tarafından yığma taşlar kullanılarak İsa Kulesi adıyla Galata surlarına ek olarak yeniden restore edilmiştir. Ayrıca o yıllarda kentin en yüksek binasıdır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  1445-1446 yılları arasında Galata Kulesi yükseltilmiştir. Daha sonra Türklerin eline geçmiş ve her yüzyılda bir restore edilmiş ve tamir edilmiştir. 16.yüzyıla <br> gelindiğinde ise Kasımpaşa tersanelerinde çalışan Hristiyan savaş esirlerinin barınağı olarak kullanılmıştır. Sultan III. Murat zamanında ise burada bir rasathane kurulmuş ve bu rasathane 1579’da kapatılmıştır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  IV.Murat döneminde yani 17.yüzyılın ilk yarısında Hezarfen Ahmet Çelebi tahtadan yaptırdığı kartal kanatlarını sırtına takıp (1638) Galata Kulesi’nden Üsküdar’a uçmuştur. Avrupa’nında ilgisini çeken bu uçuş hakkında İngiltere’de Gravürler yapılmıştır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  1717 yılı itibariyle ise Galata Kulesi Yangın Gözleme kulesi olarak kullanılmıştır. III.Selim döneminde ise çıkan bir yangında kulenin yarısından fazla bir bölümü yanmıştır. Kule onarılmış ve 1831 yılında tekrar bir yangında hasar görmüştür. 1875 yılında ise Çatı Külahı devrilmiştir. 1965’te başlanıp 1967’de bitirilen son onarımla ise kulenin günümüzde ki görünümü sağlanmıştır.
+</p>
+</center>
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Sultanahmet Camii</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/rWtoSwu8pShAQzmr5')">
+<img src="https://theasiacollective.com/wp-content/uploads/2017/11/BLUEMOSQUE.jpg" alt="sultanahmet" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br>
+<center><p class="illeryazı">
+  Sultanahmet Camii, İstanbul'un tarihi yarımadasında yer alan ve şehrin sembollerinden biri haline gelmiş muhteşem bir yapıdır. Diğer adıyla Mavi Camii olarak da bilinen <br> Sultanahmet Camii, Osmanlı İmparatorluğu'nun en önemli dini ve mimari eserlerinden biridir. Hem İstanbul'un hem de dünyanın en ünlü camilerinden biri olan <br> Sultanahmet Camii, ziyaretçilerini büyüleyen eşsiz güzelliği ve tarihi değeriyle dikkat çeker.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Sultanahmet Camii, 17. yüzyılın başında I. Ahmed tarafından yaptırılmıştır. İstanbul'daki diğer önemli camiler gibi, Sultanahmet Camii de Osmanlı İmparatorluğu'nun <br> en ünlü mimarlarından biri olan Sedefkâr Mehmet Ağa tarafından tasarlanmıştır. Caminin inşası, dönemin en iyi ustaları ve binlerce işçinin <br> uzun süren emeğiyle tamamlanmıştır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Caminin dikkat çekici özelliklerinden biri, iç ve dış mekanlarında kullanılan çinilerdir. Mavi, yeşil ve beyaz renklerle süslü olan çiniler, camiye eşsiz bir atmosfer <br> ve renk katmaktadır. Bu nedenle Sultanahmet Camii'ne "Mavi Camii" adı da verilmiştir. Caminin içerisinde yer alan devasa kubbe, üzerindeki 20 binden fazla çiniyle <br> süslenmiştir. Bu çiniler, dönemin en ünlü çini ustalarının çalışmalarıdır ve ziyaretçileri hayran bırakacak güzelliktedir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Sultanahmet Camii'nin dikkat çeken bir diğer özelliği de altı minaresidir. Bu minareler, caminin mimari yapısına ve büyüklüğüne uyum sağlamak amacıyla eklenmiştir. <br> Osmanlı İmparatorluğu'nda altı minareli cami yapmak o dönemde sadece Mekke'deki Kabe'de bulunan camiye aitti. Bu nedenle Sultanahmet Camii, mimari açıdan büyük <br> bir öneme sahiptir ve dönemin gücünü ve zenginliğini yansıtan bir simge olarak kabul edilir.
+</p>
+</center>
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Kapalı Çarşı</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/ZQ5cRKNMeVUhEXX18')">
+<img src="https://cdn.prod.www.spiegel.de/images/58493011-0001-0004-0000-000000535621_w1200_r1_fpx50.65_fpy50.jpg" alt="kapalıçarşı" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br>
+<center><p class="illeryazı">
+  Türkiye’nin en büyük şehri İstanbul’da yer alan Kapalıçarşı’nın tarihi 15'inci yüzyılın ortalarına Fatih Sultan Mehmet Dönemi’ne kadar gider. Osmanlı kurumlarını ayakta tutan en önemli uygulamalardan olan vakıf sistemine göre camilerin tamir ve bakım masrafları gibi çeşitli ihtiyaçlarının karşılanabilmesi için gelir getirici bir başka yapı meydana getirilirdi. <br> Bu gelir getirici yapıların en önemlileri çarşılar olup Fatih Sultan Mehmet tarafından Ayasofya’ya gelir getirmesi için inşa edilen yapılarla 1461 yılında Kapalıçarşı’nın da temeli <br> atılmış ve yıllar içinde yapılan eklemelerle giderek büyümüştür. Zamanla tüm bölgenin en önemli ticari merkezi haline gelen, İstanbul’un en zengin esnaflarına ev sahipliği yapan, dünyanın her yerinden gelen mücevherlerin ve kıymetli takıların ticaretinin yapıldığı Kapalıçarşı, bu yıllarda bir banka ve finans merkezi gibi de hizmet vermiştir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Aynı zamanda İstanbul’u ve Avrupalıların gözündeki Doğu yaşamını en iyi biçimde yansıtan yerlerden biri olarak görülmesi nedeniyle çok sayıda seyahat kitabında ve ressamların tablolarında yer etmesi Kapalıçarşı’nın tarihi ve kültürel önemini de kanıtlamaktadır. Dünyanın yalnızca en eski değil en büyük alışveriş merkezi olarak da tanımlanan <br> Kapalıçarşı, 45 bin metrekarelik bir alan üzerine kuruludur ve tam 3.600 dükkânı barındırmaktadır. Bu sayının bile üstünde dükkâna sahip olduğu ve daha geniş bir alanı <br> kapladığı Osmanlı Dönemi’nde ekonominin kalbinin attığı yer olan Kapalıçarşı, günümüzde İstanbul’a gelen ve alışveriş yapmak isteyenlerin ilk uğrak noktasıdır. Ziyaretçi <br> sayısı bazen günde 500 bin kişiyi dahi bulmaktadır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Burada halıdan çantaya, tekstil ürünlerinden altın ve gümüş takılara, antikalardan çinilere ve anılarınızı sonsuza kadar yaşatacak hediyelik eşyalara kadar her şeyi bulabilmeniz mümkündür. Tüm gününüzü yalnızca gezintiye ayırsanız dahi her yerini keşfetmenin mümkün olamayacağı büyüklükteki Kapalıçarşı, İstanbul’un tamamı gibi yeniyle eskiyi, gelenekselle moderni bir arada barındırmaktadır. Bu yüzden satılan bazı ürünler Osmanlı Dönemi mirası, bazıları ise modern dünyanın getirileri olarak nitelendirilebilir. <br> Kapalıçarşı’nın yakın çevresinde de alışveriş yapılabilecek pek çok yer vardır. Çarşı ile Nur-u Osmaniye Camisi arasında uzanan caddede başta halıcılar olmak üzere otantik <br> malzemeler satan dükkânlar sıralanmış durumdadır.
+</p>
+</center>
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Yerebatan Sarnacı</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/ZQ5cRKNMeVUhEXX18')">
+<img src="https://png.pngtree.com/background/20230311/original/pngtree-the-basilica-cistern-turkish-yerebatan-sarayi-sunken-palace-picture-image_2120677.jpg" alt="yerebatan" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Yerebatan Sarnıcı İstanbul'da şehrin su ihtiyacını karşılamak üzere 526-527 senelerinde yaptırılmış kapalı su sarnıcı.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Ayasofya'nın güneybatısında, Soğukçeşme Sokağı'ndadır. Suyun içinden yükselen pek çok mermer sütun nedeniyle halk arasında Yerebatan Sarayı olarak isimlendirilmektedir.<br>Sarnıcın üzerinde daha önce bir bazilika bulunmasından ötürü, Bazilika Sarnıcı olarak da adlandırılır.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Bizans imparatoru I. Justinianus tarafından yaptırılan sarnıç, şehrin birinci ve ikinci tepeleri arasındaki bölgelerin su ihtiyacını karşılayan Hadrianus su yollarına bağlanmıştı. <br> İstanbul'un Osmanlılar tarafından fethinden sonra Sarayburnu ve Bahçe Kapısı civarına su dağıtım merkezi olarak hizmet sundu; Osmanlılar'ın şehirde kendi su tesislerini <br> kurmasından sonra kullanılmasa da merkezinde olduğu mahalleyi temsil eden fiziksel bir simge durumuna geldi; ismi saraya, sadrazamın ahırlarına, caddeye ve mahalleye verildi.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Günümüzde müze ve etkinlik mekanı olarak kullanılır. İstanbul Büyükşehir Belediyesi iştiraklerinden Kültür A.Ş. tarafından işletilmektedir.
+</p>
+</center>
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Kız Kulesi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/ZQ5cRKNMeVUhEXX18')">
+<img src="https://im.haberturk.com/2021/01/25/ver1611565567/2949618_414x414.jpg" alt="kızkulesi" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  İstanbul siluetini oluşturan bir diğer yapı ise Kız Kulesi. İstanbul’un en romantik adreslerinden biri olan kule, Üsküdar ilçesinin Salacak açıklarında konumlanıyor. <br> Kız Kulesi’nin tam olarak ne zaman inşa edildiğine dair net bir kaynak bulunmuyor ama bazı kaynaklarda milattan önce 341 yılında yapılaşma sürecinin başladığı söyleniyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Birçok farklı efsaneye konu olan Kız Kulesi, geçmiş zamanlarda Damalis ve Leandros isimleri ile de anılmış. Damalis, Atina Kralı Kharis’in karısının adından gelen bir isimmiş. Damalis öldüğünde bu sahillerde gömüldüğü için kuleye bu isim verilmiş. Bizans İmparatorluğu yıllarında ise küçük kale anlamındaki Arcla ismiyle de tanınmış. <br> İstanbul fethedildikten sonra adada bulunan kule yıkılmış ve yerine ahşap bir kule yaptırılmış. Ahşap olması yüzünden yangına dayanamayan kule <br> 1725 yılında yeniden inşa edilmiş.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Tarih boyunca gemilerden vergi toplama, savunma, karantina hastanesi, radyo istasyonu gibi amaçlarla kullanılan Kız Kulesi, günümüzde romantik yemekler ve evlilik teklifleri <br> için ilk akla gelen yerlerden biri. Kule günümüzde hem müze hem de restoran olarak ziyaret ediliyor. Salacak’tan 15 dakikada bir kalkan teknelere binerek Kız Kulesi’ne kolayca ulaşabilirsin.
+</p>
+</center>
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Eminönü</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/ZQ5cRKNMeVUhEXX18')">
+<img src="https://ayder.com.tr/uploads/p/t/xcThM4dE5jmu.jpeg" alt="eminönü" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  İstanbul atmosferini en iyi şekilde deneyimleyebileceğin yere geldi sıra. Eminönü, şehrin en meşhur semtlerinden biri. Her daim bir koşuşturmaca, her daim bir turist <br> kalabalığı görebileceğin Eminönü, Rüstem Paşa Camii ve Süleymaniye Camisi tarafından çevreleniyor. Tarihi Yarımada sınırları içerisinde bulunan semt, İstanbul’da gezilecek <br> yerler listemize eklediğimiz birçok yere de ev sahipliği yapıyor. Yani bu semte ister istemez yolun düşüyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Eminönü’ne geldiğinde mutlaka yapman gereken bazı şeyler de var tabii. İlk olarak Haliç Köprüsü üzerinde sıralanmış restoranların taburelerinde oturup balık ekmek <br> yemeden asla dönmemelisin. Eğer yemezsen İstanbul’a gelmiş sayılmazsın. Aynı zamanda Haliç’te durup manzarayı izlerken martılar için simit alıp onları beslemelisin. <br> Bir İstanbul klasiğini daha yerine getirdikten sonra Eminönü’nde aradığın her şeyi bulabileceğin dükkanlarda alışverişe çıkabilirsin. Özellikle düğün, nişan gibi özel gün ya da <br> gecelerde lazım olabilecek aklına gelen her şey Eminönü’nde satılıyor.
+</p>
+</center>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="footer">
+  <div class="footer_container">
+      <div id="kutu">
+          <b>Çalışanlar</b>
+          <ul>
+              <li>Yunus Emre Kavak</li>
+              <li>Zahid Önal</li>
+              <li>Emirhan Uslu</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:150px;" >
+          <b>İletişim</b>
+          <ul>
+              <li>0 551 646 90 69</li>
+              <li>0 552 829 21 06</li>
+              <li>yunusemrekavak777@gmail.com</li>
+              <li>onalzahid1@gmail.com</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:500px; ">
+          <b>Sosyal Medya</b>
+          <ul>
+              <li>İnstagram - emrekawak </li>
+              <li>İnstagram - usluemirhann </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<title>GitGör Bursa</title>
+
+    <head>
+        <style>
+
+            a.nounderline {text-decoration: none; }
+            .header {
+  background-color: #007bff;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sag{
+  margin-left: 10px;
+}
+.sag2{
+  margin-right: 20px;
+}
+a {text-decoration: none; }
+.item {
+  height: 500px;
+  width:500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.button-1 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-1:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .button-1:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-1:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .button-1:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-1:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-1:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48Dpx;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-6 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-6:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-6:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-6:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-6:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-6:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-6:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-2 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-2:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-2:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-2:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-2:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-2:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-2:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-3 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-3:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-3:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-3:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-3:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-3:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-3:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-4 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-4:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-4:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-4:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-4:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-4:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-4:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  body,h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+  float: left;
+  border-radius: 30px;
+  left: 10px;
+}
+
+.illeryazı {
+  font-size: 15px;
+  
+} 
+
+.linkdeneme {
+  cursor: pointer
+} 
+
+.footer { background:#007bff;width:100%; height:269px;float:left;color:white; font-family:arial;}
+		.footer #kutu b {font-size:14px;}
+		* {margin:0px;padding:0px;}
+		.footer_container{width:768px; height:175px; margin:30px auto;}
+		ul {list-style-type:none;margin:17px 0;padding:0px;}
+		#kutu {width:auto; height:1px; float:left; color: #ffffff;}
+		ul li {float:left;font-family:tahoma; font-size:12px; margin-bottom:8px; clear:left; color:#2d2d2d; }
+		#kutu:last-child li {float:left;clear:none;margin-right:10px;}
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="anasayfa.html">
+                <input type="image" src="gps.png" value="GitGör.com" width="140px" style="margin-left:40px;">
+            </a>
+            <div>
+                <!-- Button 5 Hakkımızda-->
+                <a href="hakkımızda.html">
+                  <button class="button-5" role="button">Hakkımızda </button>
+                </a>
+                <!-- Button 6 İletişim-->
+                <a href="iletişim.html" class="sag">
+                    <button class="button-6" role="button">İletişim </button>
+                </a>
+                <!-- Button 2 İller-->
+                <a href="iller.html" class="sag">
+                    <button class="button-2" role="button">İller</button>
+                </a>
+                <!-- Button 3 İnsider-->
+                <a href="insider.html" class="sag">
+                  <button class="button-3" role="button">İnsider Code Academy</button>
+              </a>
+              &#160;&#160;
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+
+<center>
+        <h1>Bursa Gezi Rehberi</h1>
+      </center>
+<br><br><br>
+<center>
+  <h1>Bursa Ulu Camii</h1>
+</center>
+<br><br><br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/G7FvrJ8ckyrse5UD8')">
+<img src="https://i.sozcucdn.com/wp-content/uploads/2015/12/24/ulu-camii.jpg?w=900&h=900&mode=crop&scale=both" alt="ulucamii" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  20 tane görkemli kubbesiyle Bursa denilince ilk akla gelen simge yapılardan biri olan Bursa Ulu Camii, Osmangazi ilçesi Ulucami Caddesi’nde şehrin en çok ziyaret edilen <br> yerlerinden biri olan Hanlar Bölgesi’nde yer alıyor. İhtişamıyla yerli ve yabancı turistleri büyüleyen Bursa Ulu Camii, 1400 yılında inşa edildi ve 1855 yılında <br> yaşanan depremden sonra yenilendi. Kabe kapısını örten saf altınla süslü ipek örtünün de sergilendiği cami, Osmanlı çok ayaklı cami mimarisinin en güzel <br> örneklerinden biri olarak kabul ediliyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Yıldırım Beyazıt döneminde Niğbolu Zaferi sonrası yaptırılan Bursa Ulu Camii, 20 kubbesi, 16 köşeli şadırvanları, 3.165 m2 büyüklükteki iç alanını süsleyen <br> çinileri, minyatürleri ve ahşap oymalarıyla görülmeye değer bir güzelliğe sahip. Kündekari tekniği ile yapılan çini ve Osmanlı hat sanatı örneklerini de <br> burada inceleyebileceğiniz, Türkiye’nin en güzel camilerinden biri olarak kabul edilen Bursa Ulu Camii, hem mimari bir şaheser hem de huzurlu bir kutsal <br> mekan olarak Bursa gezilerinde kesinlikle ziyaret edilmesi gereken yerlerden.
+</p>
+</center>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<center>
+  <h1>Cumalıkızık Köyü</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/C3gwRpgKV6gDDujKA')">
+<img src="https://img.piri.net/mnresize/900/-/resim/imagecrop/2022/04/13/02/44/resized_9689f-bd75a933011_1024x1024.jpg" alt="cumalıkızık" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  2014 yılında UNESCO Dünya Kültür Mirası Listesi’ne kabul edilen Cumalıkızık Köyü, 700 yıldan uzun tarihi ve Osmanlı mimarisinin en güzel örneklerini görebileceğiniz <br> köy evleri ile tam anlamıyla bir açık hava müzesi. Bursa tarih ve kültür gezilerinin önemli bir adresi olan ve dünyanın her yerinden gelen fotoğrafçıların ilgisini çeken <br> Cumalıkızık Köyü, sizi modern dünyanın karmaşasından alıp Osmanlı dönemine geri götürecek.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Uludağ'ın eteklerinde yer alan ve yaz aylarında serin havasıyla gezmek için ideal olan Cumalıkızık Köyü; ahşap, kerpiç ve taş mimarili yüzlerce yıllık tarihi <br> evleri, yöresel Bursa yemekleri tadabileceğiniz küçük restoranları ve ev konforunda konaklayabileceğiniz küçük pansiyonlarıyla hem günlük bir gezi yapmak hem de <br> birkaç gün konaklamak için tercih edilebilir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Gezinizde Cumalıkızık Etnografya Müzesi’nde köy halkının yüzlerce yıllık günlük yaşamından kareler ve kişisel eşyalar görebilir veya asırlardır hizmet vermeye devam <br> eden tarihi Cumalıkızık Camii'ni ziyaret edebilirsiniz. Cumalıkızık Köyü, aynı zamanda köylüler tarafından yetiştirilen tamamı organik ürünlerle hazırlanan köy kahvaltıları için de ziyaret ediliyor.
+</p>
+</center>
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Yeşil Camii ve Yeşil Türbe</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/vdyG2xsJ5gMZkvBv5')">
+<img src="https://i0.wp.com/www.sanatinyolculugu.com/wp-content/uploads/2019/03/s4-e1552123284755.png?resize=559%2C568&ssl=1" alt="yeşilcamii" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Yıldırım Beyazid’in oğlu, Osmanlı padişahlarının beşincisi Çelebi Mehmed tarafından 1421 yılında yaptırılmıştır. Çelebi Mehmed Osmanlı Devletinin ikinci kurucusu kabul edilmektedir. 34 yıllık mücadelelerle dolu hayatında 24 kez savaşa katılmış, 40 ayrı yerinden yara almıştır. Yeşil Türbe’nin yapımı vefatından 40 gün önce tamamlanmış ve vefatı <br> halktan 40 gün gizlendikten sonra Yeşil Türbe’ye yapımından 80 gün sonra defnedilmiştir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Yeşil Türbe, Yeşil Külliye içerisinde bulunan Yeşil Camii’nden yüksektedir. Bu durum alışıla gelmiş bir durum değildir. Yeşil Türbe’nin Yeşil Cami’nden yüksek olmasının sebebi, Osmanlının zor döneminde dosta düşmana karşı “ayaktayız” mesajını vermek içindir.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Mimarı Hacı İvaz Paşa’dır. Nakkaşları Ali bin İlyas Ali, Mahmud el Mecnun ve Ali bin Hacı Ahmed Tebrizi’dir.
+</p>
+</center>
+<br><br><br>
+
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Uzun Çarşı</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/njXVqKs4b1LCCqmd8')">
+<img src="https://fastly.4sqi.net/img/general/600x600/29078488_aZvTkhk6u8LzLHkFF0e8Zg8xQ_yzi6lLI_mko67jIL4.jpg" alt="çarşı" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Bursa'nın en eski çarşısı olan Uzun Çarşı, 15. yüzyılın ilk yarısından beri şehrin en önemli alışveriş noktalarından biri. Osmangazi Nalbantoğlu Mahallesi'nde yer alan ve Evliya Çelebi'nin kitaplarında abartarak 100.000’den fazla dükkanın olduğunu söylediği Uzun Çarşı, Koza Han’ın kuzey tarafında şehir merkezine kısa bir yürüyüş <br> mesafesinde bulunuyor
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  1340 yılında Orhan Gazi döneminde açılan Uzun Çarşı’nın içerisinde günümüzde 80 dükkan hizmet veriyor. Çarşı; Bursa'nın ünlü kestane şekerlerini alabileceğiniz <br> şekerlemeciler, bıçakçılar, bakırcılar, tekstil ve ipek ürünleri satan küçük dükkanlar, yöresel el sanatı ürünleri alabileceğiniz mağazalar ve Bursa’nın en sevilen lezzetlerini tadabileceğiniz restoranları ile keyifli bir alışveriş deneyimi ve gezi keyfi sunuyor. Çarşısın otantik kafesinde de alışverişten sonra <br> Türk kahvenizi içerek yorgunluk atabilirsiniz.
+</p>
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Bursa Atatürk Evi Müzesi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/BUUHVw8thW1kTvQS6')">
+<img src="https://fastly.4sqi.net/img/general/600x600/88029860_eXuqDhnD00CDY6oKnyAMzm0eM2mQNWNQNw4j6KkEFsQ.jpg" alt="atam" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Çekirge Caddesi üstünde çam ağaçları arasında 19. yüzyıl sonlarında inşa edilen tarihi köşk, Atatürk'ün Bursa'da kaldığı yer olmasıyla ünlü ve 1973 tarihinde <br> Cumhuriyet'in 50. yılında müzeye dönüştürülerek ziyarete açıldı. İki katlı ve ahşap mimarili köşkün 1. katında 19. yüzyıl mobilyaları ve antikalarla süslü dinlenme odası, <br> ikinci katında ise çalışma odaları ve yatak odaları bulunuyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Atatürk'ün Bursa gezisinde çekilen resimler, kişisel eşyaları, ahşap oyması çarpıcı tavan süslemeleri ve orijinal dönem mobilyalarıyla Atatürk Evi Müzesi, Bursa'da sivil mimari örneklerinden en önemlisi olarak görülmeye değer. Merkezi bir konumdan olmasından dolayı kolayca ulaşabileceğiniz müzeyi yaz döneminde saat 10:00 ile 17:00, kış döneminde <br> ise 08:00 ile 17:00 saatleri arasında pazartesi, cumartesi ve pazar günleri hariç her gün ücretsiz olarak ziyaret edebilirsiniz.
+</p>
+</center>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Panorama 1326 Bursa Fetih Müzesi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/scGDpEqpmj2g1Lxi9')">
+<img src="https://gezilmesigerekenyerler.com/wp-content/uploads/2019/10/Panorama-1326-Bursa-Fetih-Muzesi.jpg" alt="panaroma" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Osmangazi ilçesi Gökdere Bulvarı üzerinde 2018 yılında ziyarete açılan ve dünyanın tam panoramik en büyük müzesi olan Panorama 1326 Bursa Fetih Müzesi; 8.388 m2 alanı, etkileyici mimarisi ve zengin koleksiyonları ile dünya çapında bir ilgi görüyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Osmanlıların beylikten imparatorluğa uzanan yolculuğunu detaylı bir şekilde panoramik sergilerle anlatan müze, her yıl binlerce kişi tarafından ziyaret ediliyor. Tarihsel döngülere <br> göre özenle düzenlemiş müzede yılın her döneminde gerçekleştirilen kültür ve sanat faaliyetleri, tarih söyleşileri, atölyeler ve konferanslar da tarih severlerin çok ilgisini çekiyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Kayı boyunun çadırları ve o dönemin günlük yaşamını yakından görebileceğiniz pek çok etkileyici detaya sahip Panorama 1326 Bursa Fetih Müzesi’ni pazartesi hariç haftanın <br> her günü küçük bir ücret karşılığında sabah 09:00 ile 17:00 saatleri arasında ziyaret edebilirsiniz. Halk günü olan çarşamba günleri ise müzeyi ücretsiz olarak keyifle gezebilirsiniz.
+</p>
+</center>
+<br>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Uludağ</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/Wqpy36NLdhBQAr458')">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/d5/4a/db/uludag-ski-resort.jpg?w=1200&h=1200&s=1" alt="uludağ" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Bursa merkezine 31 kilometre uzaklıkta, 2.543 metre yükseklikteki Uludağ’ın eteklerinde yer alan Uludağ Kayak Merkezi, sadece Türkiye'nin değil Avrupa'nın da en popüler <br> ve sevilen kayak merkezleri arasında. Turizm olanaklarının çok geliştiği Uludağ'da muhteşem doğa ve kayak pisti manzaraları sunan 5 yıldızlı kayak otelleri, bungalov oteller <br> ve ahşap mimarili orman köşklerinde güzel bir kış tatili yapabilirsiniz. 
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Her yaş için eğitimler veren kayak okullarının olduğu Uludağ Kayak Merkezi, 11.338 hektarlık geniş bir alanı kapsıyor. 1800 metrede oteller, 2200 metrede kayak tesislerinin <br> bulunduğu Uludağ’da 2 kilometre uzunluğu bulan kayak pistlerinin yanı sıra buz pateni, kar motosikleti ve helikopterli kayak alanları gibi pek çok seçenek de bulabilirsiniz. <br> Her yıl önemli kış festivalleri ve spor organizasyonuna ev sahipliği yapan Uludağ Kayak Merkezi’nde muhteşem kış manzaralarının fotoğraflarını çekebileceğiniz yürüyüş <br> parkurları da özellikle bahar aylarında çok ilgi görüyor.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Şömine başında kayak manzaralarının tadını çıkarabileceğiniz kafeleri, Bursa ve dünya mutfaklarından lezzetler sunan kalite restoranlarıyla da ünlü Uludağ Kayak Merkezi’ne <br> otellerin transfer servisleri, Bursa merkezinden hareket eden minibüsler, taksiler, özel aracınız veya İstanbul ve çevre şehirlerden her gün düzenlenen günübirlik kayak turları <br> ile kolayca gidebilirsiniz.
+</p>
+</center>
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Oylat Mağarası</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/GzquB5cw49QGPBDg8')">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/60/20/c5/oylat-cave.jpg?w=1200&h=1200&s=1" alt="oylat" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  3 milyon yaşıyla dünyanın keşfedilen en eski ve en büyük 2. mağarası olan Oylat Mağarası, İnegöl ilçesine 17 kilometre uzaklıkta yer alıyor. Mağaracılık tutkunlarının yanı sıra <br> tarih ve arkeoloji meraklılarının da çok ilgisini çeken bu devasa mağaranın koridorları 95 metre yükseklikte. Oylat Deresi'nin batısındaki yamaçlara asılı duran, yürüyüş alanları <br> ve özel aydınlatmalarla gezmeye uygun hale getirilen Oylat Mağarası’nın içindeki binlerce yılda oluşmuş sarkıtlar, dikitler ve mağara göletleri, insanı hayrete düşürecek güzellikle.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Her mevsim 18 derecede sabit kalan ve %90 neme sahip olan mağara havasının başta astım olmak üzere pek çok solunum yolu rahatsızlığına iyi geldiği biliniyor. Bu nedenle Oylat Mağarası, şifa arayan insanlar tarafından da sıkça ziyaret ediliyor, hatta mağarayı gezen ziyaretçilerin büyük bölümü astım, nefes darlığı ve bronşit gibi solunum yolu rahatsızlıklarının tedavisi amacıyla mağaraya geliyor ve geziden sonra büyük oranda iyileşme kaydettiklerini söylüyorlar. Büyüleyici yer altı dünyasına yolculuk yapmak ve her 1 santimi onlarca yılda oluşan dikitleri yakından görmek için Oylat Mağarası'nı tek başınıza veya profesyonel rehberlerle birlikte keşfe çıkabilirsiniz.
+</p>
+</center>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="footer">
+  <div class="footer_container">
+      <div id="kutu">
+          <b>Çalışanlar</b>
+          <ul>
+              <li>Yunus Emre Kavak</li>
+              <li>Zahid Önal</li>
+              <li>Emirhan Uslu</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:150px;" >
+          <b>İletişim</b>
+          <ul>
+              <li>0 551 646 90 69</li>
+              <li>0 552 829 21 06</li>
+              <li>yunusemrekavak777@gmail.com</li>
+              <li>onalzahid1@gmail.com</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:500px; ">
+          <b>Sosyal Medya</b>
+          <ul>
+              <li>İnstagram - emrekawak </li>
+              <li>İnstagram - usluemirhann </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

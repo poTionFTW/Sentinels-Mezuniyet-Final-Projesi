@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<title>GitGör Çanakkale</title>
+
+    <head>
+        <style>
+
+            a.nounderline {text-decoration: none; }
+            .header {
+  background-color: #007bff;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sag{
+  margin-left: 10px;
+}
+.sag2{
+  margin-right: 20px;
+}
+a {text-decoration: none; }
+.item {
+  height: 500px;
+  width:500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.button-1 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-1:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .button-1:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-1:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .button-1:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-1:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-1:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-1:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48Dpx;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-6 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-6:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-6:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-6:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-6:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-6:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-6:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-6:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-2 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-2:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-2:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-2:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-2:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-2:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-2:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-2:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-3 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-3:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-3:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-3:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-3:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-3:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-3:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-3:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-4 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-4:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-4:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-4:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-4:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-4:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-4:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-4:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  .button-5 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-5:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .button-5:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .button-5:focus {
+    outline: none;
+    border: 2px solid #ff0000;
+  }
+  
+  .button-5:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .button-5:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .button-5:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .button-5:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  body,h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+  float: left;
+  border-radius: 30px;
+  left: 10px;
+}
+
+.illeryazı {
+  font-size: 15px;
+  
+} 
+
+.linkdeneme {
+  cursor: pointer
+} 
+
+.footer { background:#007bff;width:100%; height:269px;float:left;color:white; font-family:arial;}
+		.footer #kutu b {font-size:14px;}
+		* {margin:0px;padding:0px;}
+		.footer_container{width:768px; height:175px; margin:30px auto;}
+		ul {list-style-type:none;margin:17px 0;padding:0px;}
+		#kutu {width:auto; height:1px; float:left; color: #ffffff;}
+		ul li {float:left;font-family:tahoma; font-size:12px; margin-bottom:8px; clear:left; color:#2d2d2d; }
+		#kutu:last-child li {float:left;clear:none;margin-right:10px;}
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="anasayfa.html">
+                <input type="image" src="gps.png" value="GitGör.com" width="140px" style="margin-left:40px;">
+            </a>
+            <div>
+                <!-- Button 5 Hakkımızda-->
+                <a href="hakkımızda.html">
+                  <button class="button-5" role="button">Hakkımızda </button>
+                </a>
+                <!-- Button 6 İletişim-->
+                <a href="iletişim.html" class="sag">
+                    <button class="button-6" role="button">İletişim </button>
+                </a>
+                <!-- Button 2 İller-->
+                <a href="iller.html" class="sag">
+                    <button class="button-2" role="button">İller</button>
+                </a>
+                <!-- Button 3 İnsider-->
+                <a href="insider.html" class="sag">
+                  <button class="button-3" role="button">İnsider Code Academy</button>
+              </a>
+              &#160;&#160;
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+
+<center>
+        <h1>Çanakkale Gezi Rehberi</h1>
+      </center>
+<br><br><br>
+<center>
+  <h1>Çanakkale Şehitleri Anıtı ve Harp Müzesi</h1>
+</center>
+<br><br><br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/EmS3L9zR73jZuyw78')">
+<img src="http://mimdap.org/wp-content/uploads/d123.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br><br>
+<center><p class="illeryazı">
+  Çanakkale Şehitleri Anıtı, Çanakkale il sınırları içindeki Gelibolu Yarımadası'nda, Çanakkale Boğazı'nın ucunda Morto Koyu önündeki Hisarlık Tepe üzerinde yer alan anıt.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Çanakkale Savaşı'nın yaşandığı bölgeyi görmek ve şehitlerimizi anmak için ziyaret edebileceğiniz Çanakkale Şehitleri Anıtı ve Harp Müzesi, 1971 yılında ziyarete açıldı. Sedülbahir Köyü’nün Morto Koyu’nda bulunan ve Çanakkale Savaşı’nın yapıldığı yerleri gösteren krokiler, fotoğraflar, döneme ait savaş malzemeleri, siperler, mermi çekirdekleri, askeri üniformalar ve Şehitler Abidesi gibi etkileyici anıtları inceleyebileceğiniz açık hava müzesinde 2000’e yakın obje sergileniyor. Pazartesi günleri hariç her gün 08:00 ile 17:00 saatleri arasında Çanakkale Şehitleri Anıtı ve Harp Müzesi’ni ziyaret edebilirsiniz.
+</p>
+</center>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<center>
+  <h1>Kilitbahir Kalesi</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/64StJjgY8s9RDQJPA')">
+<img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/SehirRehberi//GezilecekYer/20180319134445129_KILITBAHIR_01.jpg?format=jpg&quality=50" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br>
+<center><p class="illeryazı">
+  Eceabat ilçesine bağlı küçük bir köy olan Kilitbahir Köyü’nde yer alan ve Türkiye'nin en güzel kalelerinden biri olarak gösterilen Kilitbahir Kalesi, Fatih Sultan Mehmet <br> tarafından yaptırılmış büyüleyici bir mimari eser. Diğer Osmanlı kalelerinden farklı olarak üç yapraklı yonca biçiminde inşa edilen Kilitbahir Kalesi, İstanbul kuşatması döneminde Bizans'a yardım gitmesini engellemek amacıyla Çanakkale Boğazı'na hakim bir konumda inşa edilmiş.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  7 katlı ve üçgen planlı olan Kilitbahir Kalesi, çevresini saran iç ve dış sularıyla günümüze kadar sağlam kalmayı başarmış. 1980 yılında korunması gereken kültürel varlık olarak <br> tescil edilen ve 2013 yılında restore edilen kalenin iç odalarını gezebilir ve sularından muhteşem Çanakkale Boğazı manzaralarının fotoğraflarını çekebilirsiniz. Kilitbahir Kalesi’ne Çanakkale merkezinde her saat bulabileceğiniz Gestaş feribotları veya minibüslerle rahatlıkla ulaşım sağlayabilirsiniz. Kilitbahir Kalesi’ni yaz aylarında 09:00 ile 19:00, kış <br> aylarında ise 08:00 ile 17:00 saatleri arasında pazartesi günleri hariç her gün küçük bir ücret karşılığında gezebilirsiniz.
+</p>
+</center>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Truva Antik Kenti</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/uUS29szoMdirZndy5')">
+<img src="https://fastly.4sqi.net/img/general/600x600/344342227_Z3rukhKIm3u8xXJjqM1HceQbdetKYq9eN0oEtd8DKcY.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Homeros’un ünlü İlyada Destanı'nda bahsettiği ve antik dünyanın en büyük savaşlarından biri olan Truva Savaşı'nın yaşandığı kent olan Truva Antik Kenti, 1998 <br> yılında UNESCO Dünya Mirası Listesi’ne dahil edildi. Her yıl dünyanın her yerinden gelen yüz binlerce kişi tarafından ziyaret edilen ve tarihi M.Ö. 3000 <br> yılına kadar uzanan Truva Antik Kenti, aynı zamanda dünyanın en önemli arkeolojik kazı alanlarından biri. 
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Bölgeye hakim bir konumda inşa edilmiş ve ilk kazıların 1800’lü yılların sonunda gerçekleştirildiği antik kentten çıkarılan pek çok paha biçilmez tarihi eser ise yurt <br> dışına kaçırıldı. Kentin hemen girişinde kurulan Troya Müzesi’nde de birçok eserin sergilendiği antik kentte etkileyici heykeller, hamamlar, antik tiyatrolar, kayalara <br> oyulmuş kabartmalar ve yazıtlar arasında tarihte unutulmaz bir yolculuk yapabilirsiniz. Yılın her dönemi rehberli turlar bulabileceğiniz ve rehberlerden Truva Savaşı ile <br> ilgili ilginç bilgiler alarak gezebileceğiniz Truva Antik Kenti, Çanakkale gezilerinde kesinlikle ziyaret etmenizi önerdiğimiz tarihi hazinelerden biri.
+</p>
+
+<br><br><br><br><br>
+
+
+<br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Truva Atı</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/snZabCJ1nsAB72x27')">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/12/5a/dd/canakkale-truva-heykeli.jpg?w=1200&h=1200&s=1" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Homeros’un İlyada isimli destanında bahsettiği Troya savaşının doğu ile batı arasındaki ilk büyük savaş olduğu söylenir. Bu büyük savaş Akhalılar ( Yunanlılar ) ile Troyalılar (Truvalılar) arasında geçer. Çanakkale bölgesi önemli bir konuma sahip olması nedeniyle tarih boyunca devletlerin burayı hep sınırları içine almak istemeleri Troya Savaşının <br> asıl nedeni olduysa da savaşın başlamasını tetikleyen şey günümüze kadar efsanevi bir şekilde gelen bir aşk hikayesi olmuştur.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Efsaneleşen hikayeye göre Troya şehri kralı Priamos’u oğlu Paris, Sparta Kralı Menelaus’un karısı Helen’e aşık olur ve Helen’in rızasıyla onu Troya’ya kaçırır. Bunun üzerine <br> Kral Menelaus öfkeden çıldırır ve hem Helen’i hem de Troya şehrini almak için  tüm Yunan devletlerini kendi safında toplayarak Troya’ya savaş açar. M.Ö. 500 yıllarında <br> meydana gelen bu savaş yaklaşık 10 yıl sürer. Akhalılar ve Troyalılar arasında geçen bu uzun savaş artık askerleri yormuştur. Zekası ve cesaretiyle ünlü Akhalıların <br> komutanı  Odysseus’un aklına savaşın seyrini değiştirecek kurnazca bir fikir gelir. Bu fikir, tahtadan devasa bir atın yapılmasıdır. Ve tarihimize adını Truva atı <br> olarak kazıyacaktır.
+</p>
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>57. Piyade Alayı Şehitliği</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/fzAjGnqhQcVwvbLX7')">
+<img src="https://www.360tr.com/uploads/pano_thumbs/cabd793694.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Çanakkale'de yer alan ve çok ziyaret edilen önemli bir şehitlik de Eceabat ilçesi Kocadere mevkiinde bulunan 57. Piyade Alayı Şehitliği. Çanakkale Savaşı’nın başlangıcı <br> kabul edilen 1915 Anzak çıkarması sırasında şehit düşen askerlerimiz için 1992 yılında açılan şehitlikte 628 askerin anıt mezarı ve etkileyici heykellerin yanı sıra Çanakkale gazisi olarak 108 yaşında vefat eden Hüseyin Kaçmaz'ın tasvir edildiği heykel de görülmeye değer. Tarih turların bir parçası olarak gezebileceğiniz 57. Piyade Alayı Şehitliği’nde <br> rehberlerden Anzak çıkarmasıyla ilgili ilginç bilgiler de alabilirsiniz.
+</p>
+</center>
+<br>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Anadolu Hamidiye Tabyası</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/iC326vjLGkydXknj6')">
+<img src="https://i.cnnturk.com/i/cnnturk/75/600x0/5be56853ae784924e84196d6.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Çanakkale merkezinde Barbaros Mahallesi'nde yer alan ve Çanakkale Boğazı'nın güvenliğinin sağlanması amacıyla 1892 yılında Sultan 2. Abdülhamit tarafından inşa <br> ettirilen Anadolu Hamidiye Tabyası, Çanakkale Savaşları Tarih Müzesi'nin hemen yanı başında görülmeye değer bir manzara sunuyor. Osmanlı döneminin çarpıcı taş <br> mimarileri ile süslü bölümleri bulunan tabya, devasa toplarıyla müzesinin de önemli bir parçası.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Hem müzeyi hem de tabyayı bir arada ziyaret ederek savaşta kullanılan devasa topları ve Çanakkale Savaşı’nın detaylarını anlatan müze koleksiyonlarını inceleyebilirsiniz. <br> Şehir merkezinde yer aldığı için kolayca ulaşabileceğiniz tabyada yürüyüş ve bisiklet yolları, çocuklar için oyun alanları, seyir terasları, etkinliklerin düzenlendiği bir amfi <br> tiyatro, tören alanı ve kafeteryalar da bulunuyor. Anadolu Hamidiye Tabyası’nın geniş yeşil alanında Kilitbahir Kalesi gibi bölgenin önemli mimari yapılarının <br> minyatürlerini ve Çanakkale Boğazı'nın Marmara Denizi’nden Ege Denizi'ne kadar uzanan minyatür tasvirini de kesinlikle incelemelisiniz.
+</p>
+</center>
+<br>
+<br>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Ayazma Pınarı Tabiat Parkı</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/BFbcMBb7wmnQR62f9')">
+<img src="http://www.bayramic.gov.tr/kurumlar/bayramic.gov.tr/Haber-Gorselleri/2022/Ayazma---hd/6442b676_cdbc_4519_96ee_d0f1ecd7d0aa.jpg?mode=resize&width=800" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Bayramiç ilçesinde sınırlarında yer alan ve minibüslerle kolayca ulaşarak şehrin kalabalığından uzakta doğa ile iç içe güzel bir gün geçirebileceğiniz Ayazma Pınarı Tabiat Parkı, <br> 5,85 hektar gibi büyük bir yeşil alanı kapsıyor. İçerisinde birbirinden güzel şelaleler, endemik bitkiler ile çevrili dereler, orman köşkleri, çardaklar, mesire alanları, çocuk <br> oyun alanları ve çam ormanları içinde uzanan yürüyüş yolları bulunan Ayazma Pınarı Tabiat Parkı, oksijen seviyesi yüksek havasıyla da ünlü.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Kestane, gürgen, meşe ve Ihlamur ağaçlarıyla çevrili parkta gezerken sadece Kaz Dağları’na özgü 38 endemik bitki türünü de yakından görebilirsiniz. Seyir teraslarında her <br> mevsim muhteşem doğa fotoğrafları çekebileceğiniz parkın içerisinde kır bahçeleri ve piknik alanlarında da yılın bütün yorgunluğunu atabilirsiniz.
+</p>
+</center>
+<br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<center>
+  <h1>Assos Antik Kenti</h1>
+</center>
+<br><br>
+<div class="linkdeneme" onclick="window.open('https://goo.gl/maps/YbN51oXRaVjMygfp8')">
+<img src="https://3.bp.blogspot.com/--8QmafctCU0/TvIW41-Z8JI/AAAAAAAAAlI/1AQZ7nuvwTM/s1600/Assos%2527un+Antik+dor+tap%25C4%25B1nak+athena.jpg" style="width:350px;height:350px;margin-left:15px;" > 
+</div>
+<br><br><br><br><br>
+<center><p class="illeryazı">
+  Truva Antik Kenti ile birlikte Çanakkale'nin en çok ziyaret edilen antik kenti olan Assos Antik Kenti, Ayvacık ilçesine bağlı Behramkale Köyü sınırları içinde yer alıyor. Hem tarihi önemi hem de doğal güzelliği ile yerli ve yabancı turistleri büyüleyen Assos Antik Kenti, Midilli Adası’nın hemen karşısına M.Ö. 900 yıllarında inşa edilmiş.
+</p>
+</center>
+<br>
+<center><p class="illeryazı">
+  Antik çağın ünlü düşünürlerden Aristo'nun da yıllarca yaşadığı ve felsefe okulları kurduğu Assos Antik Kenti, döneminin en önemli kültür, sanat ve bilim merkezlerinde <br> biriydi. Kenti gezerken günümüze kadar sağlam kalmış ünlü Athena Tapınağı ve devasa antik tiyatroyu inceleyebilir, geziden sonra antik kentin sahilinde bir mola vererek tarihi manzaralar eşiğinde denizin tadını çıkarabilirsiniz. Tarih ve kültür gezilerinin yanı sıra doğa yürüyüşü turlarının da değişmez bir parçası olan Assos Antik Kenti’ne hem tarihi <br> hazineleri hem de doğal güzellikleri için mutlaka uğramalısınız.
+</p>
+</center>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="footer">
+  <div class="footer_container">
+      <div id="kutu">
+          <b>Çalışanlar</b>
+          <ul>
+              <li>Yunus Emre Kavak</li>
+              <li>Zahid Önal</li>
+              <li>Emirhan Uslu</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:150px;" >
+          <b>İletişim</b>
+          <ul>
+              <li>0 551 646 90 69</li>
+              <li>0 552 829 21 06</li>
+              <li>yunusemrekavak777@gmail.com</li>
+              <li>onalzahid1@gmail.com</li>
+          </ul>
+      </div>
+      <div id="kutu" style="margin-left:500px; ">
+          <b>Sosyal Medya</b>
+          <ul>
+              <li>İnstagram - emrekawak </li>
+              <li>İnstagram - usluemirhann </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
